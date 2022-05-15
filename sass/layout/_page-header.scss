@@ -1,35 +1,5 @@
-// logo
-$logoHeaderColor: #000000;
-$logoFooterColor: #ffffff;
-$logoCurrentColor: #2196f3;
-
-$pageHeaderBottomLine: #ececec;
-
-.logo {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  color: $logoHeaderColor;
-
-  &__accent {
-    color: $logoCurrentColor;
-  }
-}
-
-.page-footer__logo {
-  font-style: normal;
-  color: $logoFooterColor;
-}
-
 // header
+$pageHeaderBottomLine: #ececec;
 
 .page-header {
   border-bottom: 1px solid $pageHeaderBottomLine;
@@ -59,7 +29,7 @@ $pageHeaderBottomLine: #ececec;
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: color 250ms $function-cubic;
+  @include transition(color);
 
   &:hover,
   &:focus,
@@ -81,14 +51,14 @@ $pageHeaderBottomLine: #ececec;
 }
 
 .header-nav__item {
-  &:not(:first-child) {
-    margin-left: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
 .header-contacts__item {
-  &:not(:first-child) {
-    margin-left: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -107,7 +77,7 @@ $pageHeaderBottomLine: #ececec;
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: color 250ms $function-cubic;
+  @include transition(color);
 
   &:hover,
   &:focus {

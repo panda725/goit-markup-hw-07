@@ -63,7 +63,7 @@
       <!-- section hero -->
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- section feature -->
@@ -387,7 +387,7 @@
       <section class="section">
         <h2 class="section__title">Постоянные клиенты</h2>
         <div class="container">
-          <ul class="customers__list">
+          <ul class="customers">
             <li class="customers__item">
               <a class="customers__link" href="" aria-label="company YA&CO">
                 <svg class="customers__icon">
@@ -443,7 +443,7 @@
             <a class="logo page-footer__logo" href="index.html">
               <span class="logo__accent">Web</span>Studio
             </a>
-            <ul class="page-footer__list">
+            <ul>
               <li class="page-footer__item">
                 <a
                   class="page-footer__link"
@@ -510,9 +510,9 @@
             placeholder="E-mail"
             required
           />
-          <button class="page-footer__subscribe-btn" type="submit">
+          <button class="button subscribe-btn" type="submit">
             Подписаться
-            <svg class="footer-btn-icon" width="24" height="24">
+            <svg class="subscribe-btn__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-subscribe-btn"></use>
             </svg>
           </button>
@@ -520,6 +520,7 @@
       </div>
     </footer>
 
+    <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
@@ -533,7 +534,7 @@
           </svg>
         </button>
 
-        <form class="modal-form" autocomplete="off">
+        <form class="modal-form form" autocomplete="off">
           <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
 
           <label class="form-field">
@@ -562,22 +563,26 @@
 
           <label class="form-field">
             <span class="form-field__lable">Комментарий</span>
-            <textarea name="coment" placeholder="Введите текст"></textarea>
+            <textarea
+              class="form-field__textarea"
+              name="coment"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
 
-          <label class="form-field wrapp-checkbox">
+          <label class="wrapp-checkbox">
             <input
-              class="form-field__checkbox visually-hidden"
+              class="wrapp-checkbox__checkbox visually-hidden"
               type="checkbox"
               name="agreement"
               value="agreement"
               required
             />
-            <span class="form-field__vector"></span>
-            <span class="form-field__lable no-margin">
+            <span class="wrapp-checkbox__vector"></span>
+            <span class="wrapp-checkbox__lable no-margin">
               Соглашаюсь с рассылкой и принимаю
               <a
-                class="form-field__link"
+                class="wrapp-checkbox__link"
                 href="https://www.meme-arsenal.com/memes/84e9b0d51a7ab5a1546db0ae16a8b22e.jpg"
                 target="_blank"
               >
@@ -586,7 +591,7 @@
             </span>
           </label>
 
-          <button class="form__btn" type="submit">Отправить</button>
+          <button class="button form-btn--centered" type="submit">Отправить</button>
         </form>
       </div>
     </div>

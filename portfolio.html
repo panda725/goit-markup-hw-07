@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -62,7 +63,7 @@
           <h1 class="visually-hidden">Lorem ipsum dolor sit amet.</h1>
           <ul class="filters">
             <li class="filters__item">
-              <button class="filters__button current-btn" type="button">Все</button>
+              <button class="filters__button filters__button--current" type="button">Все</button>
             </li>
             <li class="filters__item">
               <button class="filters__button" type="button">Веб-сайты</button>
@@ -237,7 +238,6 @@
     </main>
 
     <!-- footer -->
-
     <footer class="page-footer">
       <div class="page-footer__wrapp-flex container">
         <div class="page-footer__wrapp-contacts">
@@ -245,7 +245,7 @@
             <a class="logo page-footer__logo" href="index.html">
               <span class="logo__accent">Web</span>Studio
             </a>
-            <ul class="page-footer__list">
+            <ul>
               <li class="page-footer__item">
                 <a
                   class="page-footer__link"
@@ -312,9 +312,9 @@
             placeholder="E-mail"
             required
           />
-          <button class="page-footer__subscribe-btn" type="submit">
+          <button class="button subscribe-btn" type="submit">
             Подписаться
-            <svg class="footer-btn-icon" width="24" height="24">
+            <svg class="subscribe-btn__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-subscribe-btn"></use>
             </svg>
           </button>

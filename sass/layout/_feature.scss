@@ -2,8 +2,10 @@
   @include centeredFlex(flex);
 }
 
-.feature__item:not(:nth-child(4)) {
-  margin-right: 30px;
+.feature__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature__title {
@@ -26,11 +28,9 @@
 }
 
 .feature__wrapp-icon {
-  $bgColorFeature: #f5f4fa;
+  $bgColorFeature: #f5f4fa; // задает серый фон на иконках
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex(flex);
 
   width: 270px;
   height: 120px;
