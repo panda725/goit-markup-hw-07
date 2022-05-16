@@ -1,14 +1,14 @@
 @import './utils/variables';
-@import './utils/visual-hidden';
 @import './utils/mixins';
 
 @import './base/normalize';
+@import './base/visual-hidden';
 @import './base/base';
 @import './base/section';
-@import './base/container';
 
+@import './components/container';
 @import './components/button';
-@import './components/backdrop';
+@import './layout/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
 

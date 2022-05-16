@@ -10,8 +10,8 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
-}
 
-.section.no-padding-top {
-  padding-top: 0;
+  &--no-padding-top {
+    padding-top: 0;
+  }
 }
